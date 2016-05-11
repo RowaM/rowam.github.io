@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+  Personal Website By Raowaa MAhmood
+-->
+<html>
+
+<head>
+	<title>Raowaa Mahmood</title>
+    <meta charset="utf-8" />
+    <meta name="description=" content="My website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/main2.css"/>
+    <link rel="stylesheet" href="css/morphext.css">
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $("label").click(function(){
+        $(".hamburger").toggle();
+    });
+});
+</script>
+</head>
+
+<body>
+
+	<input type="checkbox" id="btnControl"/>
+		<label class="nav-icon" for="btnControl">
+		  <div></div>
+	</label>
+
+	<section class="hamburger">
+		<h1><a href="#">Blog</a></h1>
+		<h1><a href="portfolio.html">Portfolio</a></h1>
+		<h1><a href="about.html">Contact</a></h1>
+	</section>
+
+	<section class="nav">
+		<div class="logo"><a href="index.html">ROWA</a></div>
+		<ul>
+			<li><a href="#">Blog</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="about.html">Contact</a></li>
+		</ul>
+	</section>
+
+	<section class="main">
+		<img src="img/animate2.gif" alt="icons">
+		<div class="heading">
+			<h1>I CREATE <span id="js-rotating">WEBSITES,ILLUSTRATIONS,DIGITAL ART,ANIMATIONS</span></h1>
+			<p>A digital designer & self-taught web developer.<br>With a knack for visual storytelling and a keen eye for good design.</p>
+			<p class="copyright">&copy; 2016 Raowaa Mahmood. All rights reserved.</p>
+	    </div>
+	</section>
+
+	<section class="bg">
+		<img src="img/border.png">
+	</section>
+
+    <script src="morphext.js"></script>
+        <script>
+            $("#js-rotating").Morphext({
+                animation: "bounceIn",
+                speed: 4500,
+                complete: function () {
+                    console.log("This is called after a phrase is animated in! Current phrase index: " + this.index);
+                }
+            });
+    </script>
+
+</body>
+
+</html>
