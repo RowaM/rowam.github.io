@@ -134,15 +134,6 @@ body {
 	padding: 0 5%;
 }
 
-.main-about {
-	padding: 0 5%;
-	flex: none;
-}
-
-.main-about img {
-	width: 30px;
-}
-
 .heading {
 	padding-top: 5em;
 	padding-left: 5%;
@@ -154,9 +145,15 @@ body {
 	letter-spacing: 0.08em;
 }
 
-.about h2 {
-	color: #FF217C;
+.heading a {
+	text-decoration: none;
+	color: #FD207A;
 }
+
+.heading h4 > a {
+	color: #585659;
+}
+
 
 #js-rotating {
 	color: #FF217C;
@@ -168,8 +165,10 @@ body {
 
 .heading p {
 	font-family: 'Fauna One', serif;
+	font-size: 16px;
 	letter-spacing: 0.8px;
 	font-weight: 400;
+	max-width: 550px;
 }
 
 .copyright {
@@ -273,14 +272,31 @@ body {
 
 /* mobile */
 @media only screen and (max-width : 450px) {
+
 	.heading h1 {
 	margin-top: 0;
 	font-size: 1.9em;
 	letter-spacing: 0.08em;
 }
 
+.heading p {
+	font-size: 13px;
+}
+
+.heading h4 {
+	font-size: 14px;
+}
+
 .copyright {
 	font-size: 10px;
+}
+
+}
+
+@media only screen and (max-height: 550px) {
+
+.bg img {
+	display: none;
 }
 
 }
@@ -339,7 +355,7 @@ body {
 .main {
 	display: flex;
 	justify-content: center;
-	margin-top: 6vh;
+	margin-top: 0;
 }
 
 .heading {
